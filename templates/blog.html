@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<div class="jumbotron">
+		<h3><b>{{blog.title}}</b><br/>
+		{{blog.content}}<br/><br/></h3>
+		<h4> By: {{blog.author}} | Date: {{blog.creation_date}}</h4>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
